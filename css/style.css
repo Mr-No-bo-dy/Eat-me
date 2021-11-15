@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.top-bg {
+    background-color: #151517;
+}
+.soup-bg {
+    background: url(../img/bg-soup.jpg) center/cover;
+}
+.fruit-soup {
+    text-align: center;
+}
+.cta {
+    display: inline-block;
+    padding: 20px;
+    background-color: #f5ed07;
+    border-radius: 4px;
+}
+.cta:hover {
+    color: #f5ed07;
+    border: 2px solid yellow;
+    background-color: #fff;
+}
+.box {
+    text-align: center;
+    min-height: 260px;
+    min-width: 270px;
+}
+.box:hover {
+    border: 2px solid yellow;
+    border-radius: 4px;
+}
+.description-bg {
+    background-color: #f1f1f3;
+}
+.description {
+    text-align: center;
+}
+.cooking-bg {
+    background: url(../img/bg-cooking.jpg) center/cover;
+    text-align: center;
+}
+.dishes {
+    text-align: center;
+}
+.cta-small {
+    text-align: center;
+}
+.cta-small li {
+    display: inline-block;
+}
+.cta-small a {
+    display: inline-block;
+    padding: 12px;
+    border: 2px solid yellow;
+    border-radius: 4px;
+}
+.cta-small a:hover {
+    background-color: #f5ed07;
+}
+
+.responses-bg {
+    background-color: #f1f1f3;
+}
+.responses {
+    text-align: center;
+}
+.photo img {
+    border-radius: 70px;
+}
+.photo img:hover {
+    border: 2px solid #f5ed07;
+}
+.responses p {
+    display: inline-block;
+    background-color: #fff;
+}
+.map {
+    min-height: 500px;
+}
+.bottom-bg {
+    background-color: #151517;
+}
