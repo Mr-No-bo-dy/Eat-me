@@ -1,78 +1,250 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* html {
+    font-size: 10px;
+} */
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1170px;
 }
+
+.top-bg {
+    background-color: #151517;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
 }
+
+header li,
+.dishes li,
+.social li {
+    display: inline-block;
+}
+
+.contacts-top a {
+    color: #f1f1f3;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1,
+h6.title {
+    color: #151517;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.head-menu {
+    text-align: right;
+    color: #151517;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.soup-bg {
+    min-height: 480px;
+    background: url(../img/bg-soup.jpg) center/cover;
+}
+
+.fruit-soup {
+    text-align: center;
+}
+
+.fruit-soup h2 {
+    text-align: center;
+    font-family: "Roboto Slab";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+.fruit-soup p {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 20px;
+    font-family: "Roboto";
+    color: #151517;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #f5ed07;
+    border-radius: 4px;
+}
+
+.cta a:hover {
+    border: 2px solid yellow;
+    background-color: #fff;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
 }
-.top-bg {
-    background-color: #151517;
-}
-.soup-bg {
-    background: url(../img/bg-soup.jpg) center/cover;
-}
-.fruit-soup {
-    text-align: center;
-}
-.cta {
-    display: inline-block;
-    padding: 20px;
-    background-color: #f5ed07;
-    border-radius: 4px;
-}
-.cta:hover {
-    color: #f5ed07;
-    border: 2px solid yellow;
-    background-color: #fff;
-}
-.box {
+
+.advantage {
     text-align: center;
     min-height: 260px;
     min-width: 270px;
 }
-.box:hover {
+
+.advantage:hover {
     border: 2px solid yellow;
     border-radius: 4px;
 }
-.description-bg {
+
+.advantage h3 {
+    font-family: "Roboto Slab";
+    color: #151517;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.advantage p {
+    font-family: "Roboto";
+    color: #878787;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.about-bg {
     background-color: #f1f1f3;
 }
-.description {
+
+.about {
     text-align: center;
 }
+
+.about h4 {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    color: #151517;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.about p {
+    font-family: "Roboto";
+    color: #878787;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .cooking-bg {
+    min-height: 263px;
     background: url(../img/bg-cooking.jpg) center/cover;
     text-align: center;
 }
+
+.cooking-bg p {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .dishes {
     text-align: center;
 }
+
+h4 {
+    font-family: "Roboto Slab";
+    color: #151517;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+}
+
 .cta-small {
     text-align: center;
 }
+
 .cta-small li {
     display: inline-block;
 }
+
 .cta-small a {
     display: inline-block;
     padding: 12px;
+    font-family: "Roboto";
+    color: #151517;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     border: 2px solid yellow;
     border-radius: 4px;
 }
+
 .cta-small a:hover {
     background-color: #f5ed07;
 }
@@ -80,22 +252,82 @@ ul {
 .responses-bg {
     background-color: #f1f1f3;
 }
-.responses {
-    text-align: center;
-}
+
 .photo img {
-    border-radius: 70px;
+    border-radius: 50%;
 }
+
 .photo img:hover {
     border: 2px solid #f5ed07;
 }
+
+.responses {
+    text-align: center;
+}
+
 .responses p {
     display: inline-block;
+    max-width: 770px;
+    font-family: "Roboto";
+    color: #878787;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
     background-color: #fff;
 }
+
+.responses h5 {
+    font-family: "Roboto Slab";
+    color: #151517;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p.respondent {
+    font-family: "Roboto";
+    color: #878787;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+}
+
 .map {
     min-height: 500px;
 }
+
 .bottom-bg {
     background-color: #151517;
+}
+
+h6.title {
+    color: #f1f1f3;
+    text-transform: none;
+}
+
+h6 {
+    font-family: "Roboto Slab";
+    color: #f1f1f3;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.column p {
+    color: #878787;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.column a {
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.column a:hover {
+    color: #f5ed08;
 }
