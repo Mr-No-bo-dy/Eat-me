@@ -79,50 +79,49 @@ header li,
     margin: 15px 10px;
 }
 
-/* .social li {
-    background: url(../img/eat-me_sprites1.png) no-repeat;
-}
-
-li.facebook {
+.social>li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    background-position: -91px 0;
-    z-index: 2;
-} */
+    background-color: #f5ed07;
+    border-radius: 50%;
+}
 
 .social a {
-    display: block;
+    border-radius: 50%;
     background: url(../img/eat-me_sprites.png) no-repeat;
 }
 
 a.facebook {
     width: 8px;
     height: 16px;
-    background-position: -64px 0;
+    background-position: -64px -17px;
 }
 
 a.facebook:hover {
-    background-position: -64px -17px;
+    background-position: -64px 0;
 }
 
 a.twitter {
     width: 16px;
     height: 13px;
-    background-position: -74px 0;
+    background-position: -74px -17px;
 }
 
 a.twitter:hover {
-    background-position: -74px -17px;
+    background-position: -74px 0;
 }
 
 a.skype {
     width: 15px;
     height: 15px;
-    background-position: -47px 0;
+    background-position: -47px -17px;
 }
 
 a.skype:hover {
-    background-position: -47px -17px;
+    background-position: -47px 0;
 }
 
 .contacts-top a {
@@ -196,11 +195,11 @@ h6.title {
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #f5ed07;
+    border: 2px solid transparent;
     border-radius: 4px;
 }
 
 .cta a:hover {
-    padding: 18px;
     border: 2px solid #f5ed07;
     background-color: #fff;
 }
@@ -216,10 +215,10 @@ h6.title {
     box-sizing: border-box;
     text-align: center;
     min-height: 260px;
+    border: 2px solid transparent;
 }
 
 .advantage:hover {
-    padding: 38px 0;
     border: 2px solid #f5ed07;
     border-radius: 4px;
 }
@@ -321,12 +320,17 @@ h4 {
     background-color: #f5ed07;
 }
 
+.dishes-bg picture {
+    width: 20%;
+}
+
 .responses-bg {
     background-color: #f1f1f3;
 }
 
 .photo img {
     border-radius: 50%;
+    border: 2px solid transparent;
 }
 
 .photo img:hover {
