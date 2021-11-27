@@ -73,24 +73,68 @@ a {
 }
 
 header li,
-.dishes li,
+.our-dishes li,
 .social li {
     display: inline-block;
-    margin: 15px 10px;
-}
-
-.social>li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: #f5ed07;
-    border-radius: 50%;
 }
 
 .social a {
+    display: block;
+    margin: 6px 2px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/eat-me_sprites2.png);
     border-radius: 50%;
+}
+
+a.facebook {
+    background-position: -128px 0;
+    border: 2px solid #151517;
+}
+
+a.facebook:hover {
+    background-position: -128px -34px;
+    border: 2px solid #f5ed07;
+}
+
+a.twitter {
+    background-position: -160px 0;
+    border: 2px solid #151517;
+}
+
+a.twitter:hover {
+    background-position: -160px -34px;
+    border: 2px solid #f5ed07;
+}
+
+a.skype {
+    background-position: -96px 0;
+    border: 2px solid #151517;
+}
+
+a.skype:hover {
+    background-position: -96px -34px;
+    border: 2px solid #f5ed07;
+}
+
+/* .social>li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #f5ed07;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.social li:hover {
+    background-color: #151517;
+    border: 2px solid #f5ed07;
+}
+
+.social a {
     background: url(../img/eat-me_sprites.png) no-repeat;
 }
 
@@ -122,30 +166,74 @@ a.skype {
 
 a.skype:hover {
     background-position: -47px 0;
+} */
+
+a.address,
+a.phone,
+a.mail {
+    position: relative;
+    display: block;
+    margin: 16px 30px;
+}
+
+.contacts-top a:hover {
+    color: #f5ed07;
+}
+
+a.address:before,
+a.phone:before,
+a.mail:before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: -7px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/eat-me_sprites2.png);
+    border: 2px solid #151517;
+    border-radius: 50%;
+}
+
+a.address:before {
+    background-position: 0 0;
+}
+
+a.address:hover:before {
+    background-position: 0 -34px;
+    border: 2px solid #f5ed07;
+}
+
+a.phone:before {
+    background-position: -32px 0;
+}
+
+a.phone:hover:before {
+    background-position: -32px -34px;
+    border: 2px solid #f5ed07;
 }
 
 .contacts-top a {
     color: #f1f1f3;
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
+    font-family: "Roboto";
 }
 
 h1,
 h6.title {
     margin: 20px 10px;
     color: #151517;
-    font-family: "Roboto Slab";
     font-weight: 700;
     font-size: 30px;
+    font-family: "Roboto Slab";
 }
 
 .head-menu a {
     text-align: right;
     color: #151517;
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
+    font-family: "Roboto";
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -159,18 +247,66 @@ h6.title {
 }
 
 .soup-bg {
+    position: relative;
     min-height: 480px;
+    padding: 60px 0;
+    box-sizing: border-box;
     text-align: center;
     background: url(../img/bg-soup.jpg) center/cover;
 }
 
+a.cta-arrow {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-color: #111011;
+    border-radius: 50%;
+}
+
+a.cta-arrow:hover {
+    background-color: #f5ed07;
+}
+
+a.arrow-left {
+    left: 100px;
+}
+
+a.arrow-right {
+    right: 100px;
+}
+
+a.cta-arrow:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+a.cta-arrow:hover:after {
+    border-color: #151517;
+}
+
+a.arrow-left:after {
+    right: 12px;
+    transform: rotate(-45deg);
+}
+
+a.arrow-right:after {
+    right: 16px;
+    transform: rotate(135deg);
+}
+
 .fruit-soup h2 {
-    padding: 95px 0 40px;
+    padding: 40px 0;
     text-align: center;
-    font-family: "Roboto Slab";
     color: #fff;
     font-weight: 700;
     font-size: 50px;
+    font-family: "Roboto Slab";
     line-height: 60px;
     letter-spacing: 2px;
 }
@@ -178,20 +314,23 @@ h6.title {
 .fruit-soup p {
     color: red;
     /* color: #fff; */
-    font-family: "Roboto";
     font-weight: 300;
     font-size: 18px;
+    font-family: "Roboto";
     line-height: 28px;
 }
 
 .cta a {
     display: inline-block;
-    margin: 40px 0 95px;
-    padding: 20px;
-    font-family: "Roboto";
+    margin: 40px 0;
+    padding: 16px 0;
+    box-sizing: border-box;
+    width: 240px;
+    height: 60px;
     color: #151517;
     font-weight: 700;
     font-size: 18px;
+    font-family: "Roboto";
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #f5ed07;
@@ -207,7 +346,13 @@ h6.title {
 .flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 60px 0;
+}
+
+.column {
+    margin: 0 15px;
+    width: 270px;
 }
 
 .advantage {
@@ -218,28 +363,46 @@ h6.title {
     border: 2px solid transparent;
 }
 
+.advantage picture {
+    display: block;
+    margin: auto 0;
+}
+
+figcaption {
+    margin: auto 0;
+}
+
+/* .advantage picture {
+    display: block;
+    margin: 30px auto;
+} */
+
+/* .advantage .delivery {
+    margin: 40px auto;
+} */
+
 .advantage:hover {
     border: 2px solid #f5ed07;
     border-radius: 4px;
 }
 
 .advantage h3 {
-    font-family: "Roboto Slab";
     color: #151517;
     font-weight: 700;
     font-size: 18px;
+    font-family: "Roboto Slab";
 }
 
 .advantage p {
-    font-family: "Roboto";
     color: #878787;
     font-weight: 400;
     font-size: 14px;
+    font-family: "Roboto";
     line-height: 21px;
 }
 
 .about-bg {
-    padding: 35px 0;
+    padding-bottom: 45px;
     box-sizing: border-box;
     background-color: #f1f1f3;
 }
@@ -249,19 +412,18 @@ h6.title {
 }
 
 .about h4 {
-    margin: 25px;
-    font-family: "Roboto Slab";
-    font-weight: 700;
     color: #151517;
+    font-weight: 700;
     font-size: 36px;
+    font-family: "Roboto Slab";
     line-height: 46px;
 }
 
 .about p {
-    font-family: "Roboto";
     color: #878787;
     font-weight: 300;
     font-size: 16px;
+    font-family: "Roboto";
     line-height: 24px;
 }
 
@@ -274,24 +436,32 @@ h6.title {
 }
 
 .cooking-bg p {
-    font-family: "Roboto";
     color: #fff;
     font-weight: 300;
     font-size: 16px;
+    font-family: "Roboto";
     line-height: 24px;
 }
 
-.dishes {
+.our-dishes {
     text-align: center;
+}
+
+.our-dishes h4 {
+    padding: 0;
 }
 
 h4 {
     padding: 50px 0 30px;
-    font-family: "Roboto Slab";
     color: #151517;
     font-weight: 700;
     font-size: 36px;
+    font-family: "Roboto Slab";
     line-height: 46px;
+}
+
+.dishes {
+    padding: 30px 0;
 }
 
 .cta-small {
@@ -304,12 +474,15 @@ h4 {
 
 .cta-small a {
     display: inline-block;
-    margin: 30px 0;
-    padding: 12px;
-    font-family: "Roboto";
+    margin: 30px 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 150px;
+    height: 40px;
     color: #151517;
     font-weight: 700;
     font-size: 14px;
+    font-family: "Roboto";
     letter-spacing: 1px;
     text-transform: uppercase;
     border: 2px solid #f5ed07;
@@ -320,8 +493,34 @@ h4 {
     background-color: #f5ed07;
 }
 
-.dishes-bg picture {
+/* .dishes-bg picture {
     width: 20%;
+} */
+
+.dish-bg {
+    min-height: 200px;
+    min-width: 200px;
+    width: 20%;
+}
+
+.dishes-bg1 {
+    background: url(../img/dish1.jpg) center/contain;
+}
+
+.dishes-bg2 {
+    background: url(../img/dish2.jpg) center/contain;
+}
+
+.dishes-bg3 {
+    background: url(../img/dish3.jpg) center/contain;
+}
+
+.dishes-bg4 {
+    background: url(../img/dish4.jpg) center/contain;
+}
+
+.dishes-bg5 {
+    background: url(../img/dish5.jpg) center/contain;
 }
 
 .responses-bg {
@@ -344,27 +543,33 @@ h4 {
 .responses p {
     display: inline-block;
     max-width: 770px;
-    font-family: "Roboto";
     color: #878787;
     font-weight: 300;
     font-size: 15px;
+    font-family: "Roboto";
     line-height: 24px;
     background-color: #fff;
 }
 
 .responses h5 {
-    font-family: "Roboto Slab";
     color: #151517;
     font-weight: 700;
     font-size: 14px;
+    font-family: "Roboto Slab";
+}
+
+.responses .photo {
+    margin: 20px 0 10px;
 }
 
 p.respondent {
-    font-family: "Roboto";
+    margin: 10px 0 25px;
     color: #878787;
     font-weight: 300;
     font-size: 13px;
+    font-family: "Roboto";
     line-height: 24px;
+    background-color: #f1f1f3;
 }
 
 .map {
@@ -381,34 +586,72 @@ h6.title {
 }
 
 h6 {
-    font-family: "Roboto Slab";
+    margin: 30px 0;
     color: #f1f1f3;
     font-weight: 700;
     font-size: 14px;
+    font-family: "Roboto Slab";
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.column {
-    margin: 0 15px;
-    width: 270px;
-}
-
 .column p {
     color: #878787;
-    font-family: "Roboto";
     font-weight: 300;
     font-size: 13px;
+    font-family: "Roboto";
     line-height: 24px;
 }
 
 .column a {
     color: #fff;
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
+    font-family: "Roboto";
 }
 
-.column a:hover {
+.bottom {
+    padding: 30px 0 45px;
+}
+
+.bottom-menu li {
+    margin: 8px 0;
+}
+
+.bottom-menu a:hover {
     color: #f5ed08;
+}
+
+.contacts-bottom a.address:before,
+.contacts-bottom a.phone:before {
+    border: 0px solid #f5ed07;
+}
+
+.contacts-bottom a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contacts-bottom a.address:before {
+    background-position: 0 -34px;
+}
+
+.contacts-bottom a.address:hover:before {
+    background-position: 0 0;
+}
+
+.contacts-bottom a.phone:before {
+    background-position: -32px -34px;
+}
+
+.contacts-bottom a.phone:hover:before {
+    background-position: -32px 0;
+}
+
+a.mail:before {
+    background-position: -64px -34px;
+}
+
+a.mail:hover::before {
+    background-position: -64px 0;
 }

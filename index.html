@@ -20,15 +20,15 @@
                         <li><a class="skype" href="skype:EatMe"></a></li>
                     </ul>
                     <ul class="contacts-top">
-                        <li class="address"><a href="#">м. Львів, вул. Срийська 57</a></li>
-                        <li class="phone"><a href="tel:+380974567895">+38 (097) 456-78-95</a></li>
+                        <li><a class="address" href="#">м. Львів, вул. Срийська 57</a></li>
+                        <li><a class="phone" href="tel:+380974567895">+38 (097) 456-78-95</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="wrapper">
             <div class="flex-between">
-                <h1>EatMe</a></h1>
+                <h1>EatMe</h1>
                 <nav>
                     <ul class="head-menu">
                         <li><a href="index.html">Головна</a></li>
@@ -44,6 +44,7 @@
     </header>
     <main>
         <div class="soup-bg">
+            <a href="#" class="cta-arrow arrow-left"></a>
             <div class="wrapper">
                 <div class="fruit-soup">
                     <h2>Смачний Фруктовий суп</h2>
@@ -54,30 +55,39 @@
                     <p class="cta"><a href="#">Замовити суп</a></p>
                 </div>
             </div>
+            <a href="#" class="cta-arrow arrow-right"></a>
         </div>
         <div class="wrapper">
             <div class="flex-center">
-                <div class="column advantage">
+                <figure class="column advantage">
                     <picture><img src="img/work.png" alt="working-24-7"></picture>
-                    <h3>Працюємо 24/7</h3>
-                    <p>Наш сервіз працює цілодобово,
-                        без вихідних днів</p>
-                </div>
-                <div class="column advantage">
-                    <picture><img src="img/delivery.png" alt="fast-delivery"></picture>
-                    <h3>Швидка доставка</h3>
-                    <p>Кур’єр доставить Вам їжу впродовж однієї години</p>
-                </div>
-                <div class="column advantage">
+                    <figcaption>
+                        <h3>Працюємо 24/7</h3>
+                        <p>Наш сервіз працює цілодобово,
+                            без вихідних днів</p>
+                    </figcaption>
+                </figure>
+                <figure class="column advantage">
+                    <picture class="delivery"><img src="img/delivery.png" alt="fast-delivery"></picture>
+                    <figcaption>
+                        <h3>Швидка доставка</h3>
+                        <p>Кур’єр доставить Вам їжу впродовж однієї години</p>
+                    </figcaption>
+                </figure>
+                <figure class="column advantage">
                     <picture><img src="img/quality.png" alt="guaranteed-quality"></picture>
-                    <h3>Гарантована якість</h3>
-                    <p>Наша продукція має найвищий рівень якості ГОСТ-90210</p>
-                </div>
-                <div class="column advantage">
+                    <figcaption>
+                        <h3>Гарантована якість</h3>
+                        <p>Наша продукція має найвищий рівень якості ГОСТ-90210</p>
+                    </figcaption>
+                </figure>
+                <figure class="column advantage">
                     <picture><img src="img/prices.png" alt="low-prices"></picture>
-                    <h3>Низькі ціни</h3>
-                    <p>У нас працює система накопичення балів після кожного замовлення</p>
-                </div>
+                    <figcaption>
+                        <h3>Низькі ціни</h3>
+                        <p>У нас працює система накопичення балів після кожного замовлення</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
         <div class="about-bg">
@@ -100,43 +110,52 @@
                 <p class="cta"><a href="#">Переглянути меню</a></p>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="dishes">
-                <h4>Наші популярні страви</h4>
-                <nav>
-                    <ul class="cta-small">
-                        <li><a href="#">Перші страви</a></li>
-                        <li><a href="#">Другі страви</a></li>
-                        <li><a href="#">Напої</a></li>
-                        <li><a href="#">Десерт</a></li>
-                    </ul>
-                </nav>
+        <div class="dishes">
+            <div class="wrapper">
+                <div class="our-dishes">
+                    <h4>Наші популярні страви</h4>
+                    <nav>
+                        <ul class="cta-small">
+                            <li><a href="#">Перші страви</a></li>
+                            <li><a href="#">Другі страви</a></li>
+                            <li><a href="#">Напої</a></li>
+                            <li><a href="#">Десерт</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="flex-between dishes-bg">
-            <picture>
-                <source srcset="img/dish1.webp" type="image/webp">
-                <img src="img/dish1.jpg" alt="dish1">
-            </picture>
-            <picture>
-                <source srcset="img/dish2.webp" type="image/webp">
-                <img src="img/dish2.jpg" alt="dish2">
-            </picture>
-            <picture>
-                <source srcset="img/dish3.webp" type="image/webp">
-                <img src="img/dish3.jpg" alt="dish3">
-            </picture>
-            <picture>
-                <source srcset="img/dish4.webp" type="image/webp">
-                <img src="img/dish4.jpg" alt="dish4">
-            </picture>
-            <picture>
-                <source srcset="img/dish5.webp" type="image/webp">
-                <img src="img/dish5.jpg" alt="dish5">
-            </picture>
-        </div>
-        <div class="wrapper">
-            <p class="cta-small"><a href="#">Показати більше</a></p>
+            <!-- <div class="flex-between dishes-bg">
+                <picture>
+                    <source srcset="img/dish1.webp" type="image/webp">
+                    <img src="img/dish1.jpg" alt="dish1">
+                </picture>
+                <picture>
+                    <source srcset="img/dish2.webp" type="image/webp">
+                    <img src="img/dish2.jpg" alt="dish2">
+                </picture>
+                <picture>
+                    <source srcset="img/dish3.webp" type="image/webp">
+                    <img src="img/dish3.jpg" alt="dish3">
+                </picture>
+                <picture>
+                    <source srcset="img/dish4.webp" type="image/webp">
+                    <img src="img/dish4.jpg" alt="dish4">
+                </picture>
+                <picture>
+                    <source srcset="img/dish5.webp" type="image/webp">
+                    <img src="img/dish5.jpg" alt="dish5">
+                </picture>
+            </div> -->
+            <div class="flex-between dishes-bg">
+                <div class="dish-bg dishes-bg1"></div>
+                <div class="dish-bg dishes-bg2"></div>
+                <div class="dish-bg dishes-bg3"></div>
+                <div class="dish-bg dishes-bg4"></div>
+                <div class="dish-bg dishes-bg5"></div>
+            </div>
+            <div class="wrapper">
+                <p class="cta-small"><a href="#">Показати більше</a></p>
+            </div>
         </div>
         <div class="responses-bg">
             <div class="wrapper">
@@ -162,7 +181,7 @@
                     </div>
                     <h5 class="name">Чак Норріс</h5>
                     <p class="respondent">телеведучий</p>
-                    <div class="dot"></div>
+                    <div class="dots"></div>
                 </div>
             </div>
         </div>
@@ -178,7 +197,7 @@
                         <h6 class="title">EatMe</h6>
                         <p>&copy; 2019 EatMe. Усі права захищені.</p>
                     </div>
-                    <div class="column">
+                    <div class="column bottom-menu">
                         <h6>Меню</h6>
                         <nav>
                             <ul>
@@ -191,11 +210,11 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="column">
+                    <div class="column contacts-bottom">
                         <h6>Контакти</h6>
-                        <p class="address"><a href="#">м. Львів, вул. Срийська 57</a></p>
-                        <p class="phone"><a href="tel:+380974567895">+38 (097) 456-78-95</a></p>
-                        <p><a href="mailto:eatme@gmail.com">eatme@gmail.com</a></p>
+                        <p><a class="address" href="#">м. Львів, вул. Срийська 57</a></p>
+                        <p><a class="phone" href="tel:+380974567895">+38 (097) 456-78-95</a></p>
+                        <p><a class="mail" href="mailto:eatme@gmail.com">eatme@gmail.com</a></p>
                     </div>
                     <div class="column">
                         <h6>Пдписатися на новини</h6>
