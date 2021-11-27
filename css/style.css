@@ -498,29 +498,29 @@ h4 {
 } */
 
 .dish-bg {
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 240px;
+    min-width: 320px;
     width: 20%;
 }
 
 .dishes-bg1 {
-    background: url(../img/dish1.jpg) center/contain;
+    background: url(../img/dish1.jpg) center/auto;
 }
 
 .dishes-bg2 {
-    background: url(../img/dish2.jpg) center/contain;
+    background: url(../img/dish2.jpg) center/auto;
 }
 
 .dishes-bg3 {
-    background: url(../img/dish3.jpg) center/contain;
+    background: url(../img/dish3.jpg) center/auto;
 }
 
 .dishes-bg4 {
-    background: url(../img/dish4.jpg) center/contain;
+    background: url(../img/dish4.jpg) center/auto;
 }
 
 .dishes-bg5 {
-    background: url(../img/dish5.jpg) center/contain;
+    background: url(../img/dish5.jpg) center/auto;
 }
 
 .responses-bg {
