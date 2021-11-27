@@ -347,7 +347,7 @@ a.arrow-right:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .column {
@@ -356,30 +356,19 @@ a.arrow-right:after {
 }
 
 .advantage {
-    padding: 40px 0;
-    box-sizing: border-box;
+    padding: 48px 10px;
+    /* min-height: 260px;
+    box-sizing: border-box; */
     text-align: center;
-    min-height: 260px;
     border: 2px solid transparent;
 }
 
 .advantage picture {
-    display: block;
-    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
 }
-
-figcaption {
-    margin: auto 0;
-}
-
-/* .advantage picture {
-    display: block;
-    margin: 30px auto;
-} */
-
-/* .advantage .delivery {
-    margin: 40px auto;
-} */
 
 .advantage:hover {
     border: 2px solid #f5ed07;
@@ -387,13 +376,14 @@ figcaption {
 }
 
 .advantage h3 {
+    margin: 20px 0 10px;
     color: #151517;
     font-weight: 700;
     font-size: 18px;
     font-family: "Roboto Slab";
 }
 
-.advantage p {
+.column.advantage p {
     color: #878787;
     font-weight: 400;
     font-size: 14px;
@@ -476,9 +466,7 @@ h4 {
     display: inline-block;
     margin: 30px 5px;
     padding: 10px;
-    box-sizing: border-box;
-    min-width: 150px;
-    height: 40px;
+    min-width: 126px;
     color: #151517;
     font-weight: 700;
     font-size: 14px;
@@ -498,8 +486,8 @@ h4 {
 } */
 
 .dish-bg {
-    min-height: 240px;
-    min-width: 320px;
+    min-height: 200px;
+    min-width: 265px;
     width: 20%;
 }
 
