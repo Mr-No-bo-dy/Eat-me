@@ -166,12 +166,16 @@ a.skype:hover {
     background-position: -47px 0;
 } */
 
+.contacts-top {
+    margin: 0 -25px;
+}
+
 a.address,
 a.phone,
 a.mail {
     position: relative;
     display: block;
-    margin: 16px 30px;
+    margin: 16px 35px;
 }
 
 .contacts-top a:hover {
@@ -183,8 +187,8 @@ a.phone:before,
 a.mail:before {
     content: "";
     position: absolute;
-    left: -37px;
-    top: -7px;
+    left: -42px;
+    top: -9px;
     width: 30px;
     height: 30px;
     background-image: url(../img/eat-me_sprites2.png);
@@ -298,8 +302,7 @@ a.arrow-right:after {
     transform: rotate(135deg);
 }
 
-.fruit-soup h2 {
-    padding: 40px 0;
+.fruit-soup p b {
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -310,6 +313,7 @@ a.arrow-right:after {
 }
 
 .fruit-soup p {
+    /* padding: 45px 0; */
     color: #fff;
     font-weight: 300;
     font-size: 18px;
@@ -344,12 +348,15 @@ a.arrow-right:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 55px 0;
 }
 
 .column {
     margin: 0 15px;
     width: 270px;
+}
+
+.advantages {
+    padding: 55px 0;
 }
 
 .advantage {
@@ -405,6 +412,7 @@ a.arrow-right:after {
 }
 
 .about p {
+    max-width: 870px;
     color: #878787;
     font-weight: 300;
     font-size: 16px;
@@ -476,39 +484,39 @@ h4 {
     background-color: #f5ed07;
 }
 
-/* .dishes-bg picture {
+.dishes-bg picture {
     width: 20%;
-} */
+}
 
-.dish-bg {
+.dishes-bg picture img {
+    width: 100%;
+    height: auto;
+}
+
+/* .dish-bg {
     min-height: 200px;
     width: 20%;
 }
 
 .dishes-bg1 {
-    background: url(../img/dish1.jpg);
-    background-size: 100%;
+    background: url(../img/dish1.jpg) center/cover;
 }
 
 .dishes-bg2 {
-    background: url(../img/dish2.jpg);
-    background-size: 100%;
+    background: url(../img/dish2.jpg) center/cover;
 }
 
 .dishes-bg3 {
-    background: url(../img/dish3.jpg);
-    background-size: 100%;
+    background: url(../img/dish3.jpg) center/cover;
 }
 
 .dishes-bg4 {
-    background: url(../img/dish4.jpg);
-    background-size: 100%;
+    background: url(../img/dish4.jpg) center/cover;
 }
 
 .dishes-bg5 {
-    background: url(../img/dish5.jpg);
-    background-size: 100%;
-}
+    background: url(../img/dish5.jpg) center/cover;
+} */
 
 .responses-bg {
     background-color: #f1f1f3;
@@ -520,6 +528,7 @@ h4 {
 
 .responses p {
     display: inline-block;
+    padding: 30px;
     max-width: 770px;
     color: #878787;
     font-weight: 300;
