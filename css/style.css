@@ -81,7 +81,7 @@ header li,
     margin: 6px 2px;
     width: 30px;
     height: 30px;
-    background: url(../img/eat-me_sprites2.png);
+    background: url(../img/eat-me_sprites.png) no-repeat;
     border-radius: 50%;
 }
 
@@ -115,57 +115,6 @@ a.skype:hover {
     border: 2px solid #f5ed07;
 }
 
-/* .social>li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #f5ed07;
-    border: 2px solid transparent;
-    border-radius: 50%;
-}
-
-.social li:hover {
-    background-color: #151517;
-    border: 2px solid #f5ed07;
-}
-
-.social a {
-    background: url(../img/eat-me_sprites.png) no-repeat;
-}
-
-a.facebook {
-    width: 8px;
-    height: 16px;
-    background-position: -64px -17px;
-}
-
-a.facebook:hover {
-    background-position: -64px 0;
-}
-
-a.twitter {
-    width: 16px;
-    height: 13px;
-    background-position: -74px -17px;
-}
-
-a.twitter:hover {
-    background-position: -74px 0;
-}
-
-a.skype {
-    width: 15px;
-    height: 15px;
-    background-position: -47px -17px;
-}
-
-a.skype:hover {
-    background-position: -47px 0;
-} */
-
 .contacts-top {
     margin: 0 -25px;
 }
@@ -191,7 +140,7 @@ a.mail:before {
     top: -9px;
     width: 30px;
     height: 30px;
-    background-image: url(../img/eat-me_sprites2.png);
+    background: url(../img/eat-me_sprites.png) no-repeat;
     border: 2px solid #151517;
     border-radius: 50%;
 }
@@ -251,7 +200,7 @@ h6.title {
 .soup-bg {
     position: relative;
     min-height: 480px;
-    padding: 60px 0;
+    padding: 55px 0 65px;
     box-sizing: border-box;
     text-align: center;
     background: url(../img/bg-soup.jpg) center/cover;
@@ -271,11 +220,11 @@ a.cta-arrow:hover {
 }
 
 a.arrow-left {
-    left: 100px;
+    left: 4%;
 }
 
 a.arrow-right {
-    right: 100px;
+    right: 4%;
 }
 
 a.cta-arrow:after {
@@ -302,7 +251,8 @@ a.arrow-right:after {
     transform: rotate(135deg);
 }
 
-.fruit-soup p b {
+h2 {
+    padding: 45px 0 40px;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -313,7 +263,6 @@ a.arrow-right:after {
 }
 
 .fruit-soup p {
-    /* padding: 45px 0; */
     color: #fff;
     font-weight: 300;
     font-size: 18px;
@@ -323,7 +272,7 @@ a.arrow-right:after {
 
 .cta a {
     display: inline-block;
-    margin: 40px 0;
+    margin: 35px 0;
     padding: 16px 0;
     box-sizing: border-box;
     width: 240px;
@@ -356,7 +305,7 @@ a.arrow-right:after {
 }
 
 .advantages {
-    padding: 55px 0;
+    padding: 60px 0;
 }
 
 .advantage {
@@ -365,11 +314,58 @@ a.arrow-right:after {
     border: 2px solid transparent;
 }
 
-.advantage picture {
-    display: flex;
-    justify-content: center;
+.work {
+    display: inline-block;
+    width: 71px;
+    height: 69px;
+    background: url(../img/eat-me_sprites-big.png) no-repeat;
+    background-position: 0 0;
+}
+
+.advantage:nth-child(1):hover .work {
+    background-position: 0 -76px;
+}
+
+.delivery {
+    display: inline-block;
+    width: 74px;
+    height: 52px;
+    background: url(../img/eat-me_sprites-big.png) no-repeat;
+    background-position: -73px 0;
+}
+
+.advantage:nth-child(2):hover .delivery {
+    background-position: -73px -76px;
+}
+
+.quality {
+    display: inline-block;
+    width: 64px;
+    height: 69px;
+    background: url(../img/eat-me_sprites-big.png) no-repeat;
+    background-position: -149px 0;
+}
+
+.advantage:nth-child(3):hover .quality {
+    background-position: -149px -76px;
+}
+
+.price {
+    display: inline-block;
+    width: 70px;
+    height: 73px;
+    background: url(../img/eat-me_sprites-big.png) no-repeat;
+    background-position: -215px 0;
+}
+
+.advantage:nth-child(4):hover .price {
+    background-position: -215px -76px;
+}
+
+.advantage-pic {
+    display: inline-flex;
     align-items: center;
-    height: 74px;
+    height: 84px;
 }
 
 .advantage:hover {
@@ -378,7 +374,7 @@ a.arrow-right:after {
 }
 
 .advantage h3 {
-    margin: 20px 0 10px;
+    margin: 10px 0;
     color: #151517;
     font-weight: 700;
     font-size: 18px;
@@ -493,31 +489,6 @@ h4 {
     height: auto;
 }
 
-/* .dish-bg {
-    min-height: 200px;
-    width: 20%;
-}
-
-.dishes-bg1 {
-    background: url(../img/dish1.jpg) center/cover;
-}
-
-.dishes-bg2 {
-    background: url(../img/dish2.jpg) center/cover;
-}
-
-.dishes-bg3 {
-    background: url(../img/dish3.jpg) center/cover;
-}
-
-.dishes-bg4 {
-    background: url(../img/dish4.jpg) center/cover;
-}
-
-.dishes-bg5 {
-    background: url(../img/dish5.jpg) center/cover;
-} */
-
 .responses-bg {
     background-color: #f1f1f3;
 }
@@ -528,7 +499,6 @@ h4 {
 
 .responses p {
     display: inline-block;
-    padding: 30px;
     max-width: 770px;
     color: #878787;
     font-weight: 300;
@@ -536,6 +506,10 @@ h4 {
     font-family: "Roboto";
     line-height: 24px;
     background-color: #fff;
+}
+
+p.response {
+    padding: 30px;
 }
 
 .respondents {
@@ -552,7 +526,7 @@ h4 {
 }
 
 .responses h5 {
-    margin-top: 15px;
+    margin: 10px 0 10px;
     color: #151517;
     font-weight: 700;
     font-size: 14px;
@@ -560,7 +534,7 @@ h4 {
 }
 
 p.respondent {
-    margin: 10px 0 25px;
+    margin-bottom: 25px;
     color: #878787;
     font-weight: 300;
     font-size: 13px;
@@ -593,6 +567,7 @@ p.respondent {
 }
 
 h6.title {
+    margin: 20px 0;
     color: #f1f1f3;
     text-transform: none;
 }
