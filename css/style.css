@@ -38,9 +38,10 @@
     margin: 0;
 }
 
-/* html {
+html {
     font-size: 10px;
-} */
+    text-align: center;
+}
 
 body {
     font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -165,26 +166,20 @@ a.phone:hover:before {
 
 .contacts-top a {
     color: #f1f1f3;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Roboto";
+    font: 400 1.4rem "Roboto";
 }
 
 h1,
 h6.title {
     margin: 20px 10px;
     color: #151517;
-    font-weight: 700;
-    font-size: 30px;
-    font-family: "Roboto Slab";
+    font: 700 3.0rem "Roboto Slab";
 }
 
 .head-menu a {
     text-align: right;
     color: #151517;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Roboto";
+    font: 700 1.4rem "Roboto";
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -202,7 +197,6 @@ h6.title {
     min-height: 480px;
     padding: 55px 0 65px;
     box-sizing: border-box;
-    text-align: center;
     background: url(../img/bg-soup.jpg) center/cover;
 }
 
@@ -253,21 +247,16 @@ a.arrow-right:after {
 
 h2 {
     padding: 45px 0 40px;
-    text-align: center;
     color: #fff;
-    font-weight: 700;
-    font-size: 50px;
-    font-family: "Roboto Slab";
-    line-height: 60px;
+    font: 700 5.0rem "Roboto Slab";
+    line-height: 1.2em;
     letter-spacing: 2px;
 }
 
 .fruit-soup p {
     color: #fff;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: "Roboto";
-    line-height: 28px;
+    font: 300 1.8rem "Roboto";
+    line-height: 1.55em;
 }
 
 .cta a {
@@ -278,9 +267,7 @@ h2 {
     width: 240px;
     height: 60px;
     color: #151517;
-    font-weight: 700;
-    font-size: 18px;
-    font-family: "Roboto";
+    font: 700 1.8rem "Roboto";
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #f5ed07;
@@ -310,7 +297,6 @@ h2 {
 
 .advantage {
     padding: 48px 10px;
-    text-align: center;
     border: 2px solid transparent;
 }
 
@@ -373,20 +359,16 @@ h2 {
     border-radius: 4px;
 }
 
-.advantage h3 {
+.advantage h4 {
     margin: 10px 0;
     color: #151517;
-    font-weight: 700;
-    font-size: 18px;
-    font-family: "Roboto Slab";
+    font: 700 1.8rem "Roboto Slab";
 }
 
 .column.advantage p {
     color: #878787;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Roboto";
-    line-height: 21px;
+    font: 400 1.4rem "Roboto";
+    line-height: 1.5em;
 }
 
 .about-bg {
@@ -395,66 +377,45 @@ h2 {
     background-color: #f1f1f3;
 }
 
-.about {
-    text-align: center;
-}
-
-.about h4 {
+.about h3 {
     color: #151517;
-    font-weight: 700;
-    font-size: 36px;
-    font-family: "Roboto Slab";
-    line-height: 46px;
+    font: 700 3.6rem "Roboto Slab";
+    line-height: 1.28em;
 }
 
 .about p {
     max-width: 870px;
     color: #878787;
-    font-weight: 300;
-    font-size: 16px;
-    font-family: "Roboto";
-    line-height: 24px;
+    font: 300 1.6rem "Roboto";
+    line-height: 1.5em;
 }
 
 .cooking-bg {
     min-height: 263px;
     padding: 60px 0 0;
     box-sizing: border-box;
-    text-align: center;
     background: url(../img/bg-cooking.jpg) center/cover;
 }
 
 .cooking-bg p {
     color: #fff;
-    font-weight: 300;
-    font-size: 16px;
-    font-family: "Roboto";
-    line-height: 24px;
+    font: 300 1.6rem "Roboto";
+    line-height: 1.5em;
 }
 
-.our-dishes {
-    text-align: center;
-}
-
-.our-dishes h4 {
+.our-dishes h3 {
     padding: 0;
 }
 
-h4 {
+h3 {
     padding: 50px 0 30px;
     color: #151517;
-    font-weight: 700;
-    font-size: 36px;
-    font-family: "Roboto Slab";
-    line-height: 46px;
+    font: 700 3.6rem "Roboto Slab";
+    line-height: 1.28em;
 }
 
 .dishes {
     padding: 30px 0 25px;
-}
-
-.cta-small {
-    text-align: center;
 }
 
 .cta-small li {
@@ -467,9 +428,7 @@ h4 {
     padding: 10px;
     min-width: 126px;
     color: #151517;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Roboto";
+    font: 700 1.4rem "Roboto";
     letter-spacing: 1px;
     text-transform: uppercase;
     border: 2px solid #f5ed07;
@@ -493,23 +452,29 @@ h4 {
     background-color: #f1f1f3;
 }
 
-.responses {
-    text-align: center;
-}
-
 .responses p {
     display: inline-block;
     max-width: 770px;
     color: #878787;
-    font-weight: 300;
-    font-size: 15px;
-    font-family: "Roboto";
-    line-height: 24px;
+    font: 300 1.5rem "Roboto";
+    line-height: 1.6em;
     background-color: #fff;
 }
 
 p.response {
+    position: relative;
     padding: 30px;
+}
+
+p.response:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 5px);
+    bottom: -5px;
+    background-color: #fff;
+    transform: rotate(45deg);
 }
 
 .respondents {
@@ -528,18 +493,14 @@ p.response {
 .responses h5 {
     margin: 10px 0 10px;
     color: #151517;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Roboto Slab";
+    font: 700 1.4rem "Roboto Slab";
 }
 
 p.respondent {
     margin-bottom: 25px;
     color: #878787;
-    font-weight: 300;
-    font-size: 13px;
-    font-family: "Roboto";
-    line-height: 24px;
+    font: 300 1.3rem "Roboto";
+    line-height: 1.85em;
     background-color: #f1f1f3;
 }
 
@@ -563,6 +524,7 @@ p.respondent {
 }
 
 .bottom-bg {
+    text-align: left;
     background-color: #151517;
 }
 
@@ -575,26 +537,20 @@ h6.title {
 h6 {
     margin: 30px 0;
     color: #f1f1f3;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Roboto Slab";
+    font: 700 1.4rem "Roboto Slab";
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .column p {
     color: #878787;
-    font-weight: 300;
-    font-size: 13px;
-    font-family: "Roboto";
-    line-height: 24px;
+    font: 300 1.3rem "Roboto";
+    line-height: 1.85em;
 }
 
 .column a {
     color: #fff;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Roboto";
+    font: 400 1.4rem "Roboto";
 }
 
 .bottom {
