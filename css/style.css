@@ -169,8 +169,8 @@ a.phone:hover:before {
     font: 400 1.4rem "Roboto";
 }
 
-h1,
-h6.title {
+p a.logo {
+    display: block;
     margin: 20px 10px;
     color: #151517;
     font: 700 3.0rem "Roboto Slab";
@@ -262,7 +262,7 @@ h2 {
 .cta a {
     display: inline-block;
     margin: 35px 0;
-    padding: 16px 0;
+    padding: 17px 0 16px;
     box-sizing: border-box;
     width: 240px;
     height: 60px;
@@ -377,7 +377,7 @@ h2 {
     background-color: #f1f1f3;
 }
 
-.about h3 {
+h1 {
     color: #151517;
     font: 700 3.6rem "Roboto Slab";
     line-height: 1.28em;
@@ -407,6 +407,7 @@ h2 {
     padding: 0;
 }
 
+h1,
 h3 {
     padding: 50px 0 30px;
     color: #151517;
@@ -416,6 +417,10 @@ h3 {
 
 .dishes {
     padding: 30px 0 25px;
+}
+
+.flex-between.dishes-bg {
+    margin: 0;
 }
 
 .cta-small li {
@@ -528,10 +533,9 @@ p.respondent {
     background-color: #151517;
 }
 
-h6.title {
+footer p a.logo {
     margin: 20px 0;
     color: #f1f1f3;
-    text-transform: none;
 }
 
 h6 {
