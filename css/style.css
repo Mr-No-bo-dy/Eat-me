@@ -133,7 +133,6 @@ a.mail {
     color: #f5ed07;
 }
 
-.contacts-map a.skype:before,
 a.address:before,
 a.phone:before,
 a.mail:before {
@@ -572,6 +571,58 @@ iframe {
     background-position: -96px 0;
 }
 
+.contacts-map a.skype-:before,
+.contacts-map a.address-:before,
+.contacts-map a.phone-:before,
+.contacts-map a.mail-:before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 2px;
+    background: url(../img/eat-me_sprites-.png) no-repeat;
+    border: none;
+    border-radius: 0;
+}
+
+.map-address .contacts-map a.address-:before {
+    width: 11px;
+    height: 15px;
+    background-position: 0 0;
+}
+
+.map-address .contacts-map a.address-:hover:before {
+    background-position: 0 -34px;
+}
+
+.map-address .contacts-map a.phone-:before {
+    width: 13px;
+    height: 13px;
+    background-position: -13px 0;
+}
+
+.map-address .contacts-map a.phone-:hover:before {
+    background-position: -13px -34px;
+}
+
+.contacts-map a.mail-:before {
+    width: 16px;
+    height: 11px;
+    background-position: -28px 0;
+}
+
+.contacts-map a.mail-:hover:before {
+    background-position: -28px -34px;
+}
+
+.contacts-map a.skype-:before {
+    width: 15px;
+    height: 15px;
+    background-position: -47px 0;
+}
+
+.contacts-map a.skype-:hover:before {
+    background-position: -47px -34px;
+}
 
 .bottom-bg {
     text-align: left;
