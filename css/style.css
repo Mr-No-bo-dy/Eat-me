@@ -39,7 +39,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
 }
 
@@ -58,6 +58,7 @@ a {
 
 .wrapper {
     margin: 0 auto;
+    padding: 0 15px;
     max-width: 1170px;
 }
 
@@ -67,8 +68,11 @@ a {
 
 .flex-between {
     display: flex;
-    justify-content: space-between;
-    margin: 0 -10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    /* margin: 0 -10px; */
 }
 
 header li,
@@ -116,9 +120,9 @@ a.skype:hover {
     border: 2px solid #f5ed07;
 }
 
-.contacts-top {
+/* .contacts-top {
     margin: 0 -25px;
-}
+} */
 
 .contacts-map a.skype,
 a.address,
@@ -126,7 +130,14 @@ a.phone,
 a.mail {
     position: relative;
     display: block;
-    margin: 16px 35px;
+    /* margin: 16px 35px; */
+    margin: 10px 0;
+    padding: 6px 0 6px 35px;
+}
+
+.contacts-top a {
+    color: #f1f1f3;
+    font: 400 1.4rem "Roboto";
 }
 
 .contacts-top a:hover {
@@ -138,8 +149,8 @@ a.phone:before,
 a.mail:before {
     content: "";
     position: absolute;
-    left: -42px;
-    top: -9px;
+    left: -5px;
+    top: -2px;
     width: 30px;
     height: 30px;
     background: url(../img/eat-me_sprites.png) no-repeat;
@@ -165,16 +176,51 @@ a.phone:hover:before {
     border: 2px solid #f5ed07;
 }
 
-.contacts-top a {
-    color: #f1f1f3;
-    font: 400 1.4rem "Roboto";
-}
-
 p a.logo {
     display: block;
     margin: 20px 10px;
     color: #151517;
     font: 700 3.0rem "Roboto Slab";
+}
+
+.contacts-top,
+.head-menu {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    margin: 0 10px;
+    padding-right: 20px;
+    width: 20px;
+    height: 25px;
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.hamburger span:before {
+    top: 10px;
+}
+
+.hamburger span:after {
+    top: -10px;
+}
+
+.hamburger:hover span,
+.hamburger:hover span:before,
+.hamburger:hover span:after {
+    background-color: #fd8300;
 }
 
 .head-menu a {
@@ -187,6 +233,7 @@ p a.logo {
 
 .head-menu a:hover {
     border-bottom: 3px solid #f5ed07;
+    transition: all .5s ease;
 }
 
 .head-menu li {
@@ -285,10 +332,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .column {
-    margin: 0 15px;
+    /* margin: 0 15px; */
     width: 270px;
 }
 
@@ -361,7 +411,7 @@ h2 {
 }
 
 .advantage h4 {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     color: #151517;
     font: 700 1.8rem "Roboto Slab";
 }
@@ -420,9 +470,9 @@ h3 {
     padding: 30px 0 25px;
 }
 
-.flex-between.dishes-bg {
+/* .flex-center.dishes-bg {
     margin: 0;
-}
+} */
 
 .cta-small li {
     display: inline-block;
@@ -445,9 +495,9 @@ h3 {
     background-color: #f5ed07;
 }
 
-.dishes-bg picture {
+/* .dishes-bg picture {
     width: 20%;
-}
+} */
 
 .dishes-bg picture img {
     width: 100%;
@@ -714,4 +764,49 @@ a.mail:before {
 
 a.mail:hover::before {
     background-position: -64px 0;
+}
+
+@media screen and (min-width: 548px) {
+    .flex-between.top {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 846px) {
+    .hamburger {
+        display: none;
+    }
+    
+    .contacts-top {
+        display: flex;
+    }
+    
+    .head-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .wrapper {
+        padding: 0;
+    }
+
+    .flex-between {
+        justify-content: space-between;
+    }
+
+    .flex-center.dishes-bg {
+        column-gap: 0;
+    }
+
+    .dishes-bg picture {
+        width: 20%;
+    }
+
 }
