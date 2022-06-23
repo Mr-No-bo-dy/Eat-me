@@ -876,10 +876,6 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 848px) {
-   html {
-      font-size: 10px;
-   }
-
    .logo {
       margin: 0;
    }
