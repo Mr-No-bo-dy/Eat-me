@@ -238,7 +238,7 @@ p.logo a {
 
 .head-menu a:hover {
    border-bottom: 3px solid #f5ed07;
-   transition: all .5s ease;
+   transition: border-width .5s linear;
 }
 
 .head-menu li {
