@@ -75,6 +75,14 @@ a {
    /* margin: 0 -10px; */
 }
 
+.flex-between.top {
+justify-content: space-between;
+}
+
+.flex-between.header-menu {
+   column-gap: 0;
+}
+
 header li,
 .our-dishes li,
 .social li {
@@ -195,9 +203,8 @@ p.logo a {
 .hamburger {
    display: block;
    position: relative;
-   margin: 0 10px;
-   padding-right: 20px;
-   width: 20px;
+   margin: 12px 2px;
+   width: 25px;
    height: 25px;
 }
 
@@ -206,11 +213,11 @@ p.logo a {
 .hamburger span:after {
    content: "";
    position: absolute;
-   width: 40px;
-   height: 2px;
+   width: 25px;
+   height: 4px;
    top: 50%;
+   left: 0;
    background-color: #fff;
-   border-radius: 3px;
 }
 
 .hamburger span:before {
@@ -224,7 +231,7 @@ p.logo a {
 .hamburger:hover span,
 .hamburger:hover span:before,
 .hamburger:hover span:after {
-   background-color: #fd8300;
+   background-color: #f5ed07;
 }
 
 .head-menu a {
@@ -773,19 +780,17 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 548px) {
-   .flex-between.top,
    .flex-between.header-menu {
       justify-content: space-between;
-   }
-}
-
-@media screen and (min-width: 768px) {
-   html {
-      font-size: 10px;
+      margin: 0 -10px;
    }
 }
 
 @media screen and (min-width: 848px) {
+   html {
+      font-size: 10px;
+   }
+
    .logo {
       margin: 0;
    }
