@@ -176,7 +176,11 @@ a.phone:hover:before {
    border: 2px solid #f5ed07;
 }
 
-p a.logo {
+.logo {
+   margin: 0 auto;
+}
+
+p.logo a {
    display: block;
    margin: 20px 10px;
    color: #151517;
@@ -333,7 +337,7 @@ h2 {
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   column-gap: 20px;
+   column-gap: 30px;
    row-gap: 20px;
 }
 
@@ -347,7 +351,8 @@ h2 {
 }
 
 .advantage {
-   padding: 48px 10px;
+   padding: 45px 10px;
+   box-sizing: border-box;
    border: 2px solid transparent;
 }
 
@@ -411,7 +416,7 @@ h2 {
 }
 
 .advantage h4 {
-   /* margin: 10px 0; */
+   margin: 10px 0;
    color: #151517;
    font: 700 1.8rem "Roboto Slab";
 }
@@ -609,6 +614,7 @@ iframe {
 .map-address .contacts-map a,
 .map-address .contacts-map a:hover {
    margin: 12px 0;
+   padding: 0;
    color: #f5ed08;
    border: none;
 }
@@ -679,7 +685,7 @@ iframe {
    background-color: #151517;
 }
 
-footer p a.logo {
+footer p.logo a {
    margin: 20px 0;
    color: #f1f1f3;
 }
@@ -767,7 +773,8 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 548px) {
-   .flex-between.top {
+   .flex-between.top,
+   .flex-between.header-menu {
       justify-content: space-between;
    }
 }
@@ -778,7 +785,11 @@ a.mail:hover::before {
    }
 }
 
-@media screen and (min-width: 846px) {
+@media screen and (min-width: 848px) {
+   .logo {
+      margin: 0;
+   }
+
    .hamburger {
       display: none;
    }
