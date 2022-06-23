@@ -75,7 +75,7 @@ a {
 }
 
 .flex-between.top {
-justify-content: space-between;
+   justify-content: space-between;
 }
 
 .flex-between.header-menu {
@@ -416,6 +416,7 @@ h2 {
 .advantage:hover {
    border: 2px solid #f5ed07;
    border-radius: 4px;
+   transition: all .7s ease;
 }
 
 .advantage h4 {
@@ -482,16 +483,16 @@ h3 {
    padding: 30px 0 25px;
 }
 
-.nav-dishes {
+/* .nav-dishes {
    display: none;
-}
+} */
 
 .cta-small li {
    display: inline-block;
 }
 
 .select-dishes option,
-.sel select,
+/* .sel select, */
 .cta-small a {
    display: inline-block;
    margin: 30px 5px 35px;
@@ -509,19 +510,21 @@ h3 {
    background-color: #f5ed07;
 }
 
-/* .select-dishes {
+.select-dishes {
    display: block;
-   margin: 30px 5px 35px;
+   /* margin: 30px 5px 35px; */
+   margin: 25px 0;
 }
 
 .select-dishes select {
+   max-height: 45px;
    outline: none;
    border: none;
 }
 
 .select-dishes option {
    display: block;
-	-webkit-appearance: none;
+   -webkit-appearance: none;
    appearance: none;
    margin: 0;
    width: 280px;
@@ -530,9 +533,32 @@ h3 {
 .select-dishes option:hover {
    cursor: pointer;
    border-color: #878787;
-} */
+}
 
-.sel select {
+.check {
+   display: none;
+}
+
+.check-label {
+   position: relative;
+}
+
+.check-label:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 15px;
+	border: 6px solid transparent;
+	border-top-color: #151517;
+}
+
+.check:checked+select {
+   max-height: 300px;
+   /* height: 170px; */
+   overflow: hidden;
+}
+
+/* .sel select {
 	-webkit-appearance: none;
 	appearance: none;
 	position: relative;
@@ -560,7 +586,7 @@ h3 {
 .sel select:hover {
    cursor: pointer;
    border-color: #151517;
-}
+} */
 
 .dishes-bg picture img {
    width: 100%;
@@ -841,7 +867,7 @@ a.mail:hover::before {
    .flex-between.header-menu {
       justify-content: space-between;
    }
-   
+
    .cta a {
       margin: 4vw 0;
    }
@@ -862,13 +888,13 @@ a.mail:hover::before {
       padding: 5vw 0;
    }
 
-   .nav-dishes {
+   /* .nav-dishes {
       display: block;
    }
 
    .select-dishes {
       display: none;
-   }
+   } */
 
    .more a {
       display: inline-block;
@@ -890,6 +916,21 @@ a.mail:hover::before {
 
    .head-menu {
       display: block;
+   }
+   
+   .select-dishes {
+      margin-bottom: 25px;
+   }
+
+   .select-dishes select {
+      max-height: 45px;
+   }
+
+   .select-dishes option {
+      display: inline-block;
+      text-align: center;
+      margin: 0 5px;
+      width: 150px;
    }
 }
 
@@ -913,7 +954,7 @@ a.mail:hover::before {
    h2 {
       padding: 45px 0 40px;
    }
-   
+
    a.cta-arrow {
       top: calc(50% - 20px);
    }
@@ -921,7 +962,7 @@ a.mail:hover::before {
    .cta a {
       margin: 35px 0;
    }
-   
+
    .advantages {
       padding: 60px 0;
    }
