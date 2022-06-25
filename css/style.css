@@ -75,7 +75,7 @@ a {
 }
 
 .flex-between.top {
-justify-content: space-between;
+   justify-content: space-between;
 }
 
 .flex-between.header-menu {
@@ -83,7 +83,6 @@ justify-content: space-between;
 }
 
 header li,
-.our-dishes li,
 .social li {
    display: inline-block;
 }
@@ -230,7 +229,7 @@ p.logo a {
 
 .head-menu a {
    display: inline-block;
-   padding: 1px 0;
+   padding: 2px 0;
    color: #151517;
    font: 700 1.4rem "Roboto";
    letter-spacing: 1px;
@@ -245,11 +244,11 @@ p.logo a {
 }
 
 .head-menu li {
-   margin: 30px 10px 26px;
+   margin: 30px 10px 25px;
 }
 
 .head-menu li:last-child {
-   margin: 30px 0 26px 10px;
+   margin: 30px 0 25px 10px;
 }
 
 .soup-bg {
@@ -487,21 +486,49 @@ h3 {
    padding: 30px 0 25px;
 }
 
-.nav-dishes {
+.form-dishes {
+   display: block;
+   margin: 25px 0;
+}
+
+.form-dishes select {
+   max-height: 42px;
+   overflow: hidden;
+   border: none;
+   outline: none;
+}
+
+.form-dishes option {
+   display: block;
+   width: 280px;
+}
+
+.check-label {
+   position: relative;
+}
+
+.check-label:before {
+   display: block;
+	position: absolute;
+	content: "";
+   cursor: pointer;
+	top: -9px;
+	right: 15px;
+	border: 6px solid transparent;
+	border-top-color: #151517;
+}
+
+.check {
    display: none;
 }
 
-.cta-small li {
-   display: inline-block;
+.check:checked+select {
+   max-height: 300px;
 }
 
-.select-dishes option,
-.sel select,
+.form-dishes option,
 .cta-small a {
-   display: inline-block;
-   margin: 30px 5px 35px;
    padding: 10px;
-   min-width: 126px;
    color: #151517;
    font: 700 1.4rem "Roboto";
    letter-spacing: 1px;
@@ -510,38 +537,9 @@ h3 {
    border-radius: 4px;
 }
 
+.form-dishes option:hover,
 .cta-small a:hover {
    background-color: #f5ed07;
-}
-
-.sel select {
-	-webkit-appearance: none;
-	appearance: none;
-	position: relative;
-	outline: none;
-	padding: 12px;
-	width: 296px;
-	background-color: transparent;
-}
-
-.sel {
-	position: relative;
-	background-color: #fff;
-}
-
-.sel:before {
-	content: "";
-	position: absolute;
-	top: 5px;
-	right: 17px;
-	border: 6px solid transparent;
-	border-top-color: #151517;
-	z-index: 0;
-}
-
-.sel select:hover {
-   cursor: pointer;
-   border-color: #151517;
 }
 
 .flex-center.dishes-bg {
@@ -827,7 +825,7 @@ a.mail:hover::before {
    .flex-between.header-menu {
       justify-content: space-between;
    }
-   
+
    .cta a {
       margin: 4vw 0;
    }
@@ -852,20 +850,12 @@ a.mail:hover::before {
       padding: 5vw 0;
    }
 
-   .nav-dishes {
-      display: block;
-   }
-
-   .select-dishes {
-      display: none;
-   }
-
    .more a {
       display: inline-block;
    }
 }
 
-@media screen and (min-width: 848px) {
+@media screen and (min-width: 798px) {
    .logo {
       margin: 0;
    }
@@ -880,6 +870,18 @@ a.mail:hover::before {
 
    .head-menu {
       display: block;
+   }
+   
+   .check-label:before {
+      display: none;
+   }
+
+   .form-dishes option {
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      margin: 0 5px;
+      width: 150px;
    }
 }
 
@@ -903,7 +905,7 @@ a.mail:hover::before {
    h2 {
       padding: 45px 0 40px;
    }
-   
+
    a.cta-arrow {
       top: calc(50% - 20px);
    }
@@ -911,7 +913,7 @@ a.mail:hover::before {
    .cta a {
       margin: 35px 0;
    }
-   
+
    .advantages {
       padding: 60px 0;
    }
