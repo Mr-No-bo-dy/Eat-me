@@ -184,7 +184,7 @@ a.phone:hover:before {
 
 p.logo a {
    display: block;
-   margin: 20px 10px 20px 0;
+   margin: 20px 0;
    color: #151517;
    font: 700 3.0rem "Roboto Slab";
 }
@@ -229,24 +229,27 @@ p.logo a {
 }
 
 .head-menu a {
-   text-align: right;
+   display: inline-block;
+   padding: 1px 0;
    color: #151517;
    font: 700 1.4rem "Roboto";
-   text-transform: uppercase;
    letter-spacing: 1px;
+   text-align: right;
+   text-transform: uppercase;
+   border-bottom: 3px solid transparent;
 }
 
 .head-menu a:hover {
-   border-bottom: 3px solid #f5ed07;
-   transition: border-width .5s linear;
+   border-color: #f5ed07;
+   transition: all .7s linear;
 }
 
 .head-menu li {
-   margin: 30px 10px;
+   margin: 30px 10px 26px;
 }
 
 .head-menu li:last-child {
-   margin: 30px 0 30px 10px;
+   margin: 30px 0 26px 10px;
 }
 
 .soup-bg {
@@ -416,6 +419,7 @@ h2 {
 .advantage:hover {
    border: 2px solid #f5ed07;
    border-radius: 4px;
+   transition: all 1s ease;
 }
 
 .advantage h4 {
@@ -443,6 +447,7 @@ h1 {
 }
 
 .about p {
+   display: inline-block;
    max-width: 870px;
    color: #878787;
    font: 300 1.6rem "Roboto";
@@ -509,29 +514,6 @@ h3 {
    background-color: #f5ed07;
 }
 
-/* .select-dishes {
-   display: block;
-   margin: 30px 5px 35px;
-}
-
-.select-dishes select {
-   outline: none;
-   border: none;
-}
-
-.select-dishes option {
-   display: block;
-	-webkit-appearance: none;
-   appearance: none;
-   margin: 0;
-   width: 280px;
-}
-
-.select-dishes option:hover {
-   cursor: pointer;
-   border-color: #878787;
-} */
-
 .sel select {
 	-webkit-appearance: none;
 	appearance: none;
@@ -562,7 +544,12 @@ h3 {
    border-color: #151517;
 }
 
+.flex-center.dishes-bg {
+   row-gap: 0;
+}
+
 .dishes-bg picture img {
+   vertical-align: bottom;
    width: 100%;
    height: auto;
 }
@@ -751,7 +738,6 @@ iframe {
 }
 
 footer p.logo a {
-   margin: 20px 0;
    color: #f1f1f3;
 }
 
@@ -848,6 +834,10 @@ a.mail:hover::before {
 
    a.cta-arrow {
       bottom: 25%;
+   }
+
+   .flex-center.dishes-bg {
+      row-gap: 30px;
    }
 
    .column {
