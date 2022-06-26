@@ -259,8 +259,9 @@ p.logo a {
 }
 
 a.cta-arrow {
+   display: none;
    position: absolute;
-   bottom: 90px;
+   top: calc(50% - 20px);
    width: 40px;
    height: 40px;
    background-color: #111011;
@@ -304,9 +305,8 @@ a.arrow-right:after {
 }
 
 h2 {
-   padding: 4vw 0;
    color: #fff;
-   font: 700 5.0rem "Roboto Slab";
+   font: 700 4.0rem "Roboto Slab";
    line-height: 1.2em;
    letter-spacing: 2px;
 }
@@ -316,9 +316,14 @@ h2 {
 }
 
 .fruit-soup p {
+   margin: 30px 0;
    color: #fff;
-   font: 300 1.8rem "Roboto";
+   font: 300 1.4rem "Roboto";
    line-height: 1.55em;
+}
+
+.fruit-soup .cta a {
+   margin: 0;
 }
 
 .cta a {
@@ -833,12 +838,20 @@ a.mail:hover::before {
       margin: 2.5vw 0;
    }
 
-   a.cta-arrow {
-      bottom: 25%;
-   }
-
    .flex-center.dishes-bg {
       row-gap: 30px;
+   }
+
+   .fruit-soup {
+      padding: 10vw 0;
+   }
+
+   h2 {
+      font-size: 5.0rem;
+   }
+   
+   .fruit-soup p {
+      font-size: 1.8rem;
    }
 
    .column {
@@ -847,10 +860,6 @@ a.mail:hover::before {
 
    .advantages {
       padding: 3vw 0;
-   }
-
-   .fruit-soup {
-      padding: 10vw 0;
    }
 
    .more a {
@@ -905,12 +914,12 @@ a.mail:hover::before {
       padding: 100px 0;
    }
 
-   h2 {
-      padding: 45px 0 40px;
+   .fruit-soup p {
+      margin: 45px 0;
    }
 
    a.cta-arrow {
-      top: calc(50% - 20px);
+      display: block;
    }
 
    .cta a {
