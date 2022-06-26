@@ -255,7 +255,6 @@ p.logo a {
 .soup-bg {
    position: relative;
    min-height: 480px;
-   padding: 20px 0 25px;
    box-sizing: border-box;
    background: url(../img/bg-soup.jpg) center/cover;
 }
@@ -311,7 +310,6 @@ a.arrow-right:after {
 }
 
 h2 {
-   /* padding: 4vw 0; */
    color: #fff;
    font: 700 4.0rem "Roboto Slab";
    line-height: 1.2em;
@@ -325,9 +323,13 @@ h2 {
    line-height: 1.55em;
 }
 
+.fruit-soup .cta a {
+   margin: 0;
+}
+
 .cta a {
    display: inline-block;
-   /* margin: 20px 0 0; */
+   margin: 20px 0;
    padding: 17px 0 16px;
    box-sizing: border-box;
    width: 240px;
@@ -359,7 +361,7 @@ h2 {
 }
 
 .advantages {
-   padding: 30px 0;
+   padding: 15px 0;
 }
 
 .advantage {
@@ -462,7 +464,7 @@ h1 {
 
 .cooking-bg {
    min-height: 263px;
-   padding: 60px 0 30px;
+   padding: 70px 0 30px;
    box-sizing: border-box;
    background: url(../img/bg-cooking.jpg) center/cover;
 }
@@ -471,10 +473,6 @@ h1 {
    color: #fff;
    font: 300 1.6rem "Roboto";
    line-height: 1.5em;
-}
-
-.cooking-bg .cta a {
-   margin: 30px 0 20px;
 }
 
 .our-dishes h3 {
@@ -490,7 +488,7 @@ h3 {
 }
 
 .dishes {
-   padding: 30px 0 25px;
+   padding: 40px 0 30px;
 }
 
 .nav-dishes {
@@ -835,7 +833,7 @@ a.mail:hover::before {
    }
    
    .cta a {
-      margin: 4vw 0;
+      margin: 2.5vw 0;
    }
 
    .flex-center.dishes-bg {
@@ -847,11 +845,11 @@ a.mail:hover::before {
    }
 
    .advantages {
-      padding: 5vw 0;
+      padding: 3vw 0;
    }
 
-   .soup-bg {
-      padding: 5vw 0;
+   .fruit-soup {
+      padding: 10vw 0;
    }
 
    h2 {
@@ -910,17 +908,13 @@ a.mail:hover::before {
       display: block;
    }
 
-   .soup-bg {
-      padding: 55px 0;
+   .fruit-soup {
+      padding: 100px 0;
    }
 
-   h2 {
-      /* padding: 45px 0 40px; */
+   .cta a {
+      margin: 30px 0;
    }
-
-   /* .cta a {
-      margin: 35px 0;
-   } */
    
    .advantages {
       padding: 60px 0;
