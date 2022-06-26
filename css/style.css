@@ -475,6 +475,10 @@ h1 {
    line-height: 1.5em;
 }
 
+.cooking-bg .cta a {
+   margin: 30px 0;
+}
+
 .our-dishes h3 {
    padding: 0;
 }
@@ -860,14 +864,6 @@ a.mail:hover::before {
       font-size: 1.8rem;
    }
 
-   .nav-dishes {
-      display: block;
-   }
-
-   .select-dishes {
-      display: none;
-   }
-
    .more a {
       display: inline-block;
    }
@@ -888,6 +884,14 @@ a.mail:hover::before {
 
    .head-menu {
       display: block;
+   }
+   
+   .nav-dishes {
+      display: block;
+   }
+
+   .select-dishes {
+      display: none;
    }
 }
 
