@@ -78,21 +78,24 @@ a {
 
 .flex-between.top {
    justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+}
+
+.flex-between.social {
+   justify-content: flex-start;
+   column-gap: 7px;
 }
 
 .flex-between.header-menu {
+   padding: 20px 0;
+   justify-content: center;
+   align-items: center;
    column-gap: 0;
 }
 
-header li,
-.our-dishes li,
-.social li {
-   display: inline-block;
-}
-
 .social a {
-   display: block;
-   margin: 8px 2px;
+   display: inline-block;
    width: 30px;
    height: 30px;
    background: url(../img/eat-me_sprites.png) no-repeat;
@@ -135,8 +138,7 @@ a.phone,
 a.mail {
    position: relative;
    display: block;
-   margin: 10px 0;
-   padding: 6px 0 6px 35px;
+   padding-left: 35px;
 }
 
 .contacts-top a {
@@ -154,7 +156,7 @@ a.mail:before {
    content: "";
    position: absolute;
    left: -5px;
-   top: -2px;
+   top: -8px;
    width: 30px;
    height: 30px;
    background: url(../img/eat-me_sprites.png) no-repeat;
@@ -180,13 +182,7 @@ a.phone:hover:before {
    border: 2px solid #f5ed07;
 }
 
-.logo {
-   margin: 0 auto;
-}
-
-p.logo a {
-   display: block;
-   margin: 20px 0;
+.logo a {
    color: #151517;
    font: 700 3.0rem "Roboto Slab";
 }
@@ -263,17 +259,8 @@ p.logo a {
    width: 100%;
 }
 
-.head-menu li {
-   margin: 30px 10px 25px;
-}
-
-.head-menu li:last-child {
-   margin: 30px 0 25px 10px;
-}
-
 .soup-bg {
    position: relative;
-   min-height: 480px;
    box-sizing: border-box;
    background: url(../img/bg-soup.jpg) center/cover;
 }
@@ -325,7 +312,7 @@ a.arrow-right:after {
 }
 
 .fruit-soup {
-   padding: 50px 0;
+   padding: 10vw 0;
 }
 
 h2 {
@@ -402,10 +389,6 @@ h2 {
    background-position: 0 0;
 }
 
-/* .advantage:nth-child(1):hover .work {
-   background-position: 0 -76px;
-} */
-
 .delivery {
    display: inline-block;
    width: 74px;
@@ -413,10 +396,6 @@ h2 {
    background: url(../img/eat-me_sprites-big.png) no-repeat;
    background-position: -73px 0;
 }
-
-/* .advantage:nth-child(2):hover .delivery {
-   background-position: -73px -76px;
-} */
 
 .quality {
    display: inline-block;
@@ -426,10 +405,6 @@ h2 {
    background-position: -149px 0;
 }
 
-/* .advantage:nth-child(3):hover .quality {
-   background-position: -149px -76px;
-} */
-
 .price {
    display: inline-block;
    width: 70px;
@@ -437,11 +412,6 @@ h2 {
    background: url(../img/eat-me_sprites-big.png) no-repeat;
    background-position: -215px 0;
 }
-
-/* .advantage:nth-child(4):hover .price {
-   background-position: -215px -76px;
-} */
-
 .advantage-pic {
    display: inline-flex;
    align-items: center;
@@ -465,14 +435,14 @@ h2 {
 }
 
 .about-bg {
-   padding-bottom: 45px;
+   padding: 45px 0;
    box-sizing: border-box;
    background-color: #f1f1f3;
 }
 
 h1 {
    color: #151517;
-   font: 700 3.6rem/1.28em "Roboto Slab";
+   font: 700 3.6rem/1.0em "Roboto Slab";
 }
 
 .about p {
@@ -484,7 +454,7 @@ h1 {
 
 .cooking-bg {
    min-height: 263px;
-   padding: 70px 0 30px;
+   padding: 70px 0 60px;
    box-sizing: border-box;
    background: url(../img/bg-cooking.jpg) center/cover;
 }
@@ -495,17 +465,12 @@ h1 {
 }
 
 .cooking-bg .cta a {
-   margin: 30px 0;
+   margin-top: 30px;
    transition: .5s;
 }
 
-.our-dishes h3 {
-   padding: 0;
-}
-
-h1,
 h3 {
-   padding: 50px 0 30px;
+   margin-bottom: 30px;
    color: #151517;
    font: 700 3.6rem/1.28em "Roboto Slab";
 }
@@ -518,15 +483,11 @@ h3 {
    display: none;
 }
 
-.cta-small li {
-   display: inline-block;
-}
-
 .select-dishes option,
 .sel select,
 .cta-small a {
    display: inline-block;
-   margin: 30px 5px 35px;
+   margin-bottom: 35px;
    padding: 10px;
    min-width: 150px;
    color: #151517;
@@ -572,6 +533,10 @@ h3 {
    border-color: #151517;
 }
 
+.flex-center.cta-small {
+   column-gap: 10px;
+}
+
 .flex-center.dishes-bg {
    row-gap: 0;
 }
@@ -603,6 +568,7 @@ h3 {
 
 p.response {
    position: relative;
+   margin-bottom: 30px;
    padding: 30px;
 }
 
@@ -618,10 +584,6 @@ p.response:after,
    transform: rotate(45deg);
 }
 
-.respondents {
-   padding: 20px 0 60px;
-}
-
 .photo img {
    border-radius: 50%;
    border: 3px solid transparent;
@@ -631,8 +593,12 @@ p.response:after,
    border: 3px solid #f5ed07;
 }
 
+.responses {
+   padding: 40px 0 60px;
+}
+
 .responses h5 {
-   margin: 10px 0 10px;
+   margin: 10px 0;
    color: #151517;
    font: 700 1.4rem "Roboto Slab";
 }
@@ -765,12 +731,19 @@ iframe {
    background-color: #151517;
 }
 
-footer p.logo a {
+.footer .logo a {
+   display: inline-block;
+   margin-bottom: 20px;
    color: #f1f1f3;
+   font: 700 3.0rem "Roboto Slab";
+}
+
+footer .contacts-bottom p {
+   margin: 16px 0;
 }
 
 .bottom {
-   padding: 25px 0 45px;
+   padding: 25px 0 55px;
 }
 
 h6 {
@@ -854,10 +827,6 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 548px) {
-   .flex-between.header-menu {
-      justify-content: space-between;
-   }
-   
    .cta a {
       margin: 2.5vw 0;
    }
@@ -875,7 +844,7 @@ a.mail:hover::before {
    }
 
    .fruit-soup {
-      padding: 10vw 0;
+      padding: 7.5vw 0;
    }
 
    h2 {
@@ -891,29 +860,23 @@ a.mail:hover::before {
    }
 }
 
-@media screen and (min-width: 798px) {
-   .logo {
-      margin: 0;
-   }
-
-   .hamburger {
+@media screen and (min-width: 840px) {
+   .hamburger,
+   .select-dishes {
       display: none;
    }
 
-   .contacts-top {
+   .contacts-top,
+   .head-menu {
       display: flex;
    }
-
-   .head-menu {
-      display: block;
+   
+   .flex-between.header-menu {
+      justify-content: space-between;
    }
    
    .nav-dishes {
       display: block;
-   }
-
-   .select-dishes {
-      display: none;
    }
 }
 
@@ -932,10 +895,6 @@ a.mail:hover::before {
 
    a.cta-arrow {
       display: block;
-   }
-
-   .fruit-soup {
-      padding: 100px 0;
    }
 
    .cta a {
