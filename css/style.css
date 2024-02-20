@@ -41,6 +41,7 @@
 }
 
 html {
+   /* font-size: 7px; */
    font-size: 10px;
    text-align: center;
    scroll-behavior: smooth;
@@ -726,7 +727,7 @@ iframe {
    background-position: -47px -34px;
 }
 
-.bottom-bg {
+.footer {
    text-align: left;
    background-color: #151517;
 }
@@ -777,9 +778,10 @@ h6 {
    color: #f5ed08;
 }
 
-input {
-   box-sizing: border-box;
+.footer input {
+   width: 100%;
    padding: 12px;
+   box-sizing: border-box;
    color: #f1f1f3;
    font: 400 1.4rem "Roboto";
    background-color: #151517;
@@ -861,6 +863,10 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 840px) {
+   /* html {
+      font-size: 8.5px;
+   } */
+
    .hamburger,
    .select-dishes {
       display: none;
@@ -881,6 +887,10 @@ a.mail:hover::before {
 }
 
 @media screen and (min-width: 1170px) {
+   /* html {
+      font-size: 10px;
+   } */
+
    .wrapper {
       padding: 0;
    }
