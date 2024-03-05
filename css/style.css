@@ -199,6 +199,7 @@ a.phone:hover:before {
    margin: 12px 2px;
    width: 25px;
    height: 25px;
+   cursor: pointer;
 }
 
 .hamburger span,
@@ -211,6 +212,7 @@ a.phone:hover:before {
    top: 50%;
    left: 0;
    background-color: #fff;
+   transition: .3s;
 }
 
 .hamburger span:before {
@@ -225,6 +227,32 @@ a.phone:hover:before {
 .hamburger:hover span:before,
 .hamburger:hover span:after {
    background-color: #f5ed07;
+}
+
+.hamburger_open span,
+.hamburger_open:hover span {
+   background-color: transparent;
+}
+
+.hamburger_open span:before {
+   top: 0;
+   transform: rotate(135deg);
+}
+
+.hamburger_open span:after {
+   top: -0;
+   transform: rotate(-135deg);
+}
+
+.header_block {
+   display: block;
+}
+
+.adapted_menu {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   margin-top: 2rem;
 }
 
 .head-menu a {
@@ -875,9 +903,11 @@ a.mail:hover::before {
    .contacts-top,
    .head-menu {
       display: flex;
+      flex-direction: row;
    }
    
    .flex-between.header-menu {
+      display: flex;
       justify-content: space-between;
    }
    
